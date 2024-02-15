@@ -5,13 +5,14 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>EstateAgency Bootstrap Template - About</title>
+  <title>About Abisa Support</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
-
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="assets/img/favicon" rel="icon">
+  <link href="assets/img/apple-touch-icon" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
@@ -35,151 +36,66 @@
 </head>
 
 <body>
+  <script>
+    AOS.init();
+  </script>
 
-  <!-- ======= Property Search Section ======= -->
-  <div class="click-closed"></div>
-  <!--/ Form Search Star /-->
-  <div class="box-collapse">
-    <div class="title-box-d">
-      <h3 class="title-d">Search Property</h3>
+ <!-- ======= Header/Navbar ======= -->
+ <nav class="navbar navbar-default navbar-trans navbar-expand-lg fixed-top">
+  <div class="container">
+    <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarDefault" aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <a class="navbar-brand text-brand" href="index.html">Abisa <span class="color-b">Support</span></a>
+
+    <div class="navbar-collapse collapse justify-content-center" id="navbarDefault">
+      <ul class="navbar-nav">
+
+       
+        <li class="nav-item">
+          <a class="nav-link " href="mission.html">Home</a>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Who We Are</a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item " href="about.html">About Us</a>
+            <a class="dropdown-item " href="mission.html">Mission</a>
+            
+          
+          </div>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link " href="services.html">What We Do</a>
+        </li>
+      
+
+       
+
+        <li class="nav-item">
+          <a class="nav-link " href="location.html">Location</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link " href="question.html">Faqs</a>
+        </li>
+
+        
+        <li class="nav-item">
+          <a class="nav-link " href="contact.html">Contact</a>
+        </li>
+      </ul>
     </div>
-    <span class="close-box-collapse right-boxed bi bi-x"></span>
-    <div class="box-collapse-wrap form">
-      <form class="form-a">
-        <div class="row">
-          <div class="col-md-12 mb-2">
-            <div class="form-group">
-              <label class="pb-2" for="Type">Keyword</label>
-              <input type="text" class="form-control form-control-lg form-control-a" placeholder="Keyword">
-            </div>
-          </div>
-          <div class="col-md-6 mb-2">
-            <div class="form-group mt-3">
-              <label class="pb-2" for="Type">Type</label>
-              <select class="form-control form-select form-control-a" id="Type">
-                <option>All Type</option>
-                <option>For Rent</option>
-                <option>For Sale</option>
-                <option>Open House</option>
-              </select>
-            </div>
-          </div>
-          <div class="col-md-6 mb-2">
-            <div class="form-group mt-3">
-              <label class="pb-2" for="city">City</label>
-              <select class="form-control form-select form-control-a" id="city">
-                <option>All City</option>
-                <option>Alabama</option>
-                <option>Arizona</option>
-                <option>California</option>
-                <option>Colorado</option>
-              </select>
-            </div>
-          </div>
-          <div class="col-md-6 mb-2">
-            <div class="form-group mt-3">
-              <label class="pb-2" for="bedrooms">Bedrooms</label>
-              <select class="form-control form-select form-control-a" id="bedrooms">
-                <option>Any</option>
-                <option>01</option>
-                <option>02</option>
-                <option>03</option>
-              </select>
-            </div>
-          </div>
-          <div class="col-md-6 mb-2">
-            <div class="form-group mt-3">
-              <label class="pb-2" for="garages">Garages</label>
-              <select class="form-control form-select form-control-a" id="garages">
-                <option>Any</option>
-                <option>01</option>
-                <option>02</option>
-                <option>03</option>
-                <option>04</option>
-              </select>
-            </div>
-          </div>
-          <div class="col-md-6 mb-2">
-            <div class="form-group mt-3">
-              <label class="pb-2" for="bathrooms">Bathrooms</label>
-              <select class="form-control form-select form-control-a" id="bathrooms">
-                <option>Any</option>
-                <option>01</option>
-                <option>02</option>
-                <option>03</option>
-              </select>
-            </div>
-          </div>
-          <div class="col-md-6 mb-2">
-            <div class="form-group mt-3">
-              <label class="pb-2" for="price">Min Price</label>
-              <select class="form-control form-select form-control-a" id="price">
-                <option>Unlimite</option>
-                <option>$50,000</option>
-                <option>$100,000</option>
-                <option>$150,000</option>
-                <option>$200,000</option>
-              </select>
-            </div>
-          </div>
-          <div class="col-md-12">
-            <button type="submit" class="btn btn-b">Search Property</button>
-          </div>
-        </div>
-      </form>
-    </div>
-  </div><!-- End Property Search Section -->>
 
-  <!-- ======= Header/Navbar ======= -->
-  <nav class="navbar navbar-default navbar-trans navbar-expand-lg fixed-top">
-    <div class="container">
-      <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarDefault" aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-      <a class="navbar-brand text-brand" href="index.html">Estate<span class="color-b">Agency</span></a>
+  <a href="#">  <button type="button" class="btn btn-b-n navbar-toggle-box navbar-toggle-box-collapse" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01">
+      <i class="bi bi-whatsapp"></i>
+    </button></a>
 
-      <div class="navbar-collapse collapse justify-content-center" id="navbarDefault">
-        <ul class="navbar-nav">
-
-          <li class="nav-item">
-            <a class="nav-link " href="index.html">Home</a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link active" href="about.html">About</a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link " href="property-grid.html">Property</a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link " href="blog-grid.html">Blog</a>
-          </li>
-
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Pages</a>
-            <div class="dropdown-menu">
-              <a class="dropdown-item " href="property-single.html">Property Single</a>
-              <a class="dropdown-item " href="blog-single.html">Blog Single</a>
-              <a class="dropdown-item " href="agents-grid.html">Agents Grid</a>
-              <a class="dropdown-item " href="agent-single.html">Agent Single</a>
-            </div>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link " href="contact.html">Contact</a>
-          </li>
-        </ul>
-      </div>
-
-      <button type="button" class="btn btn-b-n navbar-toggle-box navbar-toggle-box-collapse" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01">
-        <i class="bi bi-search"></i>
-      </button>
-
-    </div>
-  </nav><!-- End Header/Navbar -->
+  </div>
+</nav><!-- End Header/Navbar -->
 
   <main id="main">
 
@@ -187,20 +103,19 @@
     <section class="intro-single">
       <div class="container">
         <div class="row">
-          <div class="col-md-12 col-lg-8">
+          <div class="col-md-12 col-lg-8" data-aos="fade-right"
+          data-aos-duration="2000" >
             <div class="title-single-box">
-              <h1 class="title-single">We Do Great Design For Creative Folks</h1>
+              <h1 class="title-single"> Delivering Excellent <span style="color:#80c421;">CARE & SUPPORT</h1>
             </div>
           </div>
           <div class="col-md-12 col-lg-4">
             <nav aria-label="breadcrumb" class="breadcrumb-box d-flex justify-content-lg-end">
               <ol class="breadcrumb">
                 <li class="breadcrumb-item">
-                  <a href="#">Home</a>
+                  <a href="/index.html">Home</a>
                 </li>
-                <li class="breadcrumb-item active" aria-current="page">
-                  About
-                </li>
+                
               </ol>
             </nav>
           </div>
@@ -212,47 +127,46 @@
     <section class="section-about">
       <div class="container">
         <div class="row">
-          <div class="col-sm-12 position-relative">
+          <div class="col-sm-12 position-relative" data-aos="fade-left"
+          data-aos-duration="2000">
             <div class="about-img-box">
-              <img src="assets/img/slide-about-1.jpg" alt="" class="img-fluid">
+              <img src="https://www.mercycare.com.au/wp-content/uploads/2021/07/agedcare-banner.jpg" alt="" class="img-fluid">
             </div>
-            <div class="sinse-box">
-              <h3 class="sinse-title">EstateAgency
+            <div class="sinse-box" data-aos="fade-down"
+            data-aos-duration="2000">
+              <h3 class="sinse-title">Tel: 07466072212
                 <span></span>
-                <br> Sinse 2017
+                <br> info@abisasupport.co.uk
               </h3>
-              <p>Art & Creative</p>
+              <p>Abisa Support</p>
             </div>
           </div>
-          <div class="col-md-12 section-t8 position-relative">
+          <div class="col-md-12 section-t8 position-relative" >
             <div class="row">
-              <div class="col-md-6 col-lg-5">
-                <img src="assets/img/about-2.jpg" alt="" class="img-fluid">
+              <div class="col-md-6 col-lg-5" data-aos="fade-left"
+              data-aos-duration="2000">
+                <img src="https://www.homeinstead.com/siteassets/corporate/top-quality-care/home-instead-caregivers-provide-top-elderly-care-at-home.jpg" alt="" class="img-fluid">
               </div>
-              <div class="col-lg-2  d-none d-lg-block position-relative">
+              <div class="col-lg-2  d-none d-lg-block position-relative" data-aos="fade-down"
+              data-aos-duration="2000">
                 <div class="title-vertical d-flex justify-content-start">
-                  <span>EstateAgency Exclusive Property</span>
+                  <span>Know More About Abisa Support</span>
                 </div>
               </div>
-              <div class="col-md-6 col-lg-5 section-md-t3">
+              <div class="col-md-6 col-lg-5 section-md-t3" data-aos="fade-down"
+              data-aos-duration="2000">
                 <div class="title-box-d">
-                  <h3 class="title-d">Sed
-                    <span class="color-d">porttitor</span> lectus
-                    <br> nibh.
+                  <h3 class="title-d">We offer 
+                    <span class="color-d">excellent services </span> 
+                    <br>tailored to your needs.
                   </h3>
                 </div>
                 <p class="color-text-a">
-                  Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Vivamus magna justo, lacinia eget
-                  consectetur sed, convallis
-                  at tellus. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Vestibulum
-                  ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit
-                  neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula.
+                  ABISA Support are a care provider based in Leicestershire and determined to deliver the highest standard of care and assistance. We specialise in providing care to clients with mental illness, autism, mild learning disabilities, and behavioral challenges. We provide all within a comforting and secure living environment. 
                 </p>
                 <p class="color-text-a">
-                  Sed porttitor lectus nibh. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus.
-                  Mauris blandit aliquet
-                  elit, eget tincidunt nibh pulvinar a. Vivamus magna justo, lacinia eget consectetur sed,
-                  convallis at tellus.
+                  Our unwavering commitment is to empower our service users to think and act independently. We achieve this by adhering to the REACH standards, which are designed to unlock their full potential through our dedicated support.
+                  ABISA Support is registered with the Care Quality Commission as a service delivering care and support to individuals residing in their own homes, or their families homes within the community.
                 </p>
               </div>
             </div>
@@ -261,8 +175,22 @@
       </div>
     </section>
 
+
+      <div style="text-align:center; background:green; padding:50px;" data-aos="fade-up"
+      data-aos-duration="2000">
+        <p style="font-size:25px; color:#fff;" >Registered with the <br>Care Quality Commission</p>
+        <h3 class="" style="border-style: 1px solid; color:aliceblue; font-size:40px; text-align:center; margin:auto;">
+    
+          <img style="border-radius:10px; width:100px;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4Xv6R5ZVhK64RZfn0Bt8-_IcjD1Nxbr_IKrVHsZ90PA&s">
+          <img style="border-radius:10px; width:100px;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4Xv6R5ZVhK64RZfn0Bt8-_IcjD1Nxbr_IKrVHsZ90PA&s">
+        </h3>
+      
+      </div>
+      
+ 
+
     <!-- =======Team Section ======= -->
-    <section class="section-agents section-t8">
+    <!--<section class="section-agents section-t8">
       <div class="container">
         <div class="row">
           <div class="col-md-12">
@@ -277,7 +205,7 @@
           <div class="col-md-4">
             <div class="card-box-d">
               <div class="card-img-d">
-                <img src="assets/img/agent-7.jpg" alt="" class="img-d img-fluid">
+                <img src="https://www.medstarhealth.org/-/media/project/mho/medstar/blogs/blogmedstar/elderly-care-givers-desktop.jpg?h=605&iar=0&w=1080&hash=FE26240CE566FBB336DE9961ABCD7592" alt="" class="img-d img-fluid">
               </div>
               <div class="card-overlay card-overlay-hover">
                 <div class="card-header-d">
@@ -454,33 +382,36 @@
           </div>
         </div>
       </div>
-    </section><!-- End About Section-->
+    </section>-->
+    <!-- End About Section-->
 
   </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
   <section class="section-footer">
-    <div class="container">
-      <div class="row">
+    <div class="container" data-aos="fade-up" data-aos-delay="200">
+      <div class="row" >
         <div class="col-sm-12 col-md-4">
           <div class="widget-a">
             <div class="w-header-a">
-              <h3 class="w-title-a text-brand">EstateAgency</h3>
+              <h3 class="w-title-a text-brand">Abisa Support</h3>
             </div>
             <div class="w-body-a">
               <p class="w-text-a color-text-a">
-                Enim minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip exea commodo consequat duis
-                sed aute irure.
+                Abisa Support will provide support to people from 18-65 years, including physically disability, people with mental health illness, autism, learning disabilities and people with drugs and alcohol problems.  
               </p>
             </div>
             <div class="w-footer-a">
               <ul class="list-unstyled">
                 <li class="color-a">
-                  <span class="color-text-a">Phone .</span> contact@example.com
+                  <span class="color-text-a">Phone .</span> +07466072212 
                 </li>
                 <li class="color-a">
-                  <span class="color-text-a">Email .</span> +54 356 945234
+                  <span class="color-text-a">Email .</span>  info@abisasupport.co.uk
                 </li>
+
+      <img style="border-radius:10px; width:100px;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4Xv6R5ZVhK64RZfn0Bt8-_IcjD1Nxbr_IKrVHsZ90PA&s">
+
               </ul>
             </div>
           </div>
@@ -488,28 +419,28 @@
         <div class="col-sm-12 col-md-4 section-md-t3">
           <div class="widget-a">
             <div class="w-header-a">
-              <h3 class="w-title-a text-brand">The Company</h3>
+              <h3 class="w-title-a text-brand">Avialable Link</h3>
             </div>
             <div class="w-body-a">
               <div class="w-body-a">
                 <ul class="list-unstyled">
                   <li class="item-list-a">
-                    <i class="bi bi-chevron-right"></i> <a href="#">Site Map</a>
+                    <i class="bi bi-chevron-right"></i> <a href="#">Home</a>
                   </li>
                   <li class="item-list-a">
-                    <i class="bi bi-chevron-right"></i> <a href="#">Legal</a>
+                    <i class="bi bi-chevron-right"></i> <a href="#">About Us</a>
                   </li>
                   <li class="item-list-a">
-                    <i class="bi bi-chevron-right"></i> <a href="#">Agent Admin</a>
+                    <i class="bi bi-chevron-right"></i> <a href="#">Services</a>
                   </li>
                   <li class="item-list-a">
-                    <i class="bi bi-chevron-right"></i> <a href="#">Careers</a>
+                    <i class="bi bi-chevron-right"></i> <a href="#">Location</a>
                   </li>
                   <li class="item-list-a">
-                    <i class="bi bi-chevron-right"></i> <a href="#">Affiliate</a>
+                    <i class="bi bi-chevron-right"></i> <a href="#">FAQ</a>
                   </li>
                   <li class="item-list-a">
-                    <i class="bi bi-chevron-right"></i> <a href="#">Privacy Policy</a>
+                    <i class="bi bi-chevron-right"></i> <a href="#">Contact</a>
                   </li>
                 </ul>
               </div>
@@ -519,7 +450,7 @@
         <div class="col-sm-12 col-md-4 section-md-t3">
           <div class="widget-a">
             <div class="w-header-a">
-              <h3 class="w-title-a text-brand">International sites</h3>
+              <h3 class="w-title-a text-brand">Our Services</h3>
             </div>
             <div class="w-body-a">
               <ul class="list-unstyled">
@@ -552,7 +483,7 @@
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-          <nav class="nav-footer">
+          <!--<nav class="nav-footer">
             <ul class="list-inline">
               <li class="list-inline-item">
                 <a href="#">Home</a>
@@ -570,7 +501,7 @@
                 <a href="#">Contact</a>
               </li>
             </ul>
-          </nav>
+          </nav>-->
           <div class="socials-a">
             <ul class="list-inline">
               <li class="list-inline-item">
@@ -598,7 +529,7 @@
           <div class="copyright-footer">
             <p class="copyright color-text-a">
               &copy; Copyright
-              <span class="color-a">EstateAgency</span> All Rights Reserved.
+              <span class="color-a">Abisa Suppurt</span> All Rights Reserved.
             </p>
           </div>
           <div class="credits">
@@ -608,7 +539,7 @@
             Licensing information: https://bootstrapmade.com/license/
             Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=EstateAgency
           -->
-            Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+            
           </div>
         </div>
       </div>
